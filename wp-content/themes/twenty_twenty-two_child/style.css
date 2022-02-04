@@ -24,7 +24,7 @@ Version: 1.0
 
 header{
     background-color: var(--header-bg-color);
-    height: 33vh;
+    height: 200px;
     position: relative;
 }
 
@@ -54,8 +54,7 @@ p{
 /* main page */
 
 .content{
-    height: 66vh;
-    padding: 0 5%;
+    padding: 40px 5% 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -92,15 +91,15 @@ p{
 
 @media screen and (max-width: 960px) {
     header{
-        height: 20vh;
-    }
-
-    .content{
-        height: 79vh;
+        height: 180px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    header{
+        height: 140px;
+    }
+
     img{
         display: none;
     }
@@ -126,15 +125,19 @@ p{
 }
 
 @media screen and (max-width: 576px) {
+    header{
+        height: 100px;
+    }
+
     header > div{
         padding: 1vh;
     }
 
     h3{
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
     h4{
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
 }
