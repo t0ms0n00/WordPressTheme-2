@@ -87,3 +87,54 @@ p{
 .card span{
     color: red;
 }
+
+/* media queries */
+
+@media screen and (max-width: 960px) {
+    header{
+        height: 20vh;
+    }
+
+    .content{
+        height: 79vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img{
+        display: none;
+    }
+
+    .content{
+        display: block;
+    }
+
+    .top-cards{
+        display: none;
+    }
+
+    .bottom-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .bottom-cards > .card:nth-child(odd){
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header > div{
+        padding: 1vh;
+    }
+
+    h3{
+        font-size: 20px !important;
+    }
+
+    h4{
+        font-size: 16px !important;
+    }
+}
