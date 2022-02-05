@@ -87,6 +87,24 @@ p{
     color: red;
 }
 
+/* employees */
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 15px;
+}
+
+.employee{
+    height: 350px;
+    text-align: center;
+}
+
+.employee img{
+    object-fit: contain;
+    max-height: 85%;
+}
+
 /* media queries */
 
 @media screen and (max-width: 960px) {
@@ -100,7 +118,7 @@ p{
         height: 140px;
     }
 
-    img{
+    content > img{
         display: none;
     }
 
@@ -121,6 +139,10 @@ p{
 
     .bottom-cards > .card:nth-child(odd){
         visibility: visible;
+    }
+
+    .list{
+        display: block;
     }
 }
 
