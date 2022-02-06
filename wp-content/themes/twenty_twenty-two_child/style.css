@@ -89,7 +89,7 @@ p{
 
 /* employees */
 
-.list{
+#list{
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-gap: 15px;
@@ -103,6 +103,16 @@ p{
 .employee img{
     object-fit: contain;
     max-height: 85%;
+}
+
+button{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family: var(--main-font);
 }
 
 /* media queries */
@@ -141,7 +151,7 @@ p{
         visibility: visible;
     }
 
-    .list{
+    #list{
         display: block;
     }
 }

@@ -42,19 +42,8 @@
         <p>Lorem, <span> ipsum </span> dolor sit amet consectetur adipisicing elit. Nam architecto temporibus iure minima non. Blanditiis enim quod tenetur dolorum doloribus illo illum voluptates dolor et! </p>
         </div>
     </div>
-    <div class="list">
-    <?php 
-        while ( have_rows('employeelist') ) : the_row();
-            $name = get_sub_field('firstname');
-            $image = get_sub_field('photo') ?: get_bloginfo('stylesheet_directory') . "/img/avatar-alt.png";
-            ?>
-            <div class="employee">
-                <img src='<?php echo $image ?>' alt="photo" >
-                <p><?php echo $name ?></p>
-            </div>
-            <?php
-        endwhile;
-    ?>
+    <button id="loader"> Show me employees </button>
+    <div id="list">
     </div>
 </div>
 
